@@ -11,7 +11,4 @@ void main(params) {
   //Konsola yazdırıldı. 
 
   print("Merhaba $username, son durumda paranız $customerMoney olarak güncellenmiştir.");
-
-
-
 }

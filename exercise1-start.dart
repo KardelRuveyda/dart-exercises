@@ -7,7 +7,5 @@ void main(params) {
   int number= 10;
   print(hello);
   print(hello + number.toString());
-    print(hello + '$number');
-
-
+  print(hello + '$number');
 }
