@@ -58,29 +58,6 @@ class Customer3 {
   }
 }
 
-class Customer4 {
-  late final String name;
-  late final int money;
-  late final int? age;
-  late final String? city;
-  // sürekli final vermek zorunda değilsiniz.
-  // bu değişken sonradan gelecek. Late derseniz herhangi bir zamanda verebilirsiniz.
-  // late dolmadan, değer dolmadan önce çağırırsanız hata alabilirsiniz.
-  // late final kullanırsanız yüzde yüz olarak constructor da kullanmak gerekiyor. 
-
-  late final String userCode;
-// aşağıdaki gibi {} içine alıp yazdığımızda bu alanları değer olarak vermek zorunda olmadığımız görülür.
-  Customer3(String name, int money, {int? age, String? city}) {
-    this.name = name;
-    this.money = money;
-    this.age = age;
-    this.city = city;
-    userCode = (city ?? 'tr') + name;
-
-    // ?? kontrolü yaparak kullanılabilir.
-  }
-}
-
 
 
 void CustomerClassCheck() {
